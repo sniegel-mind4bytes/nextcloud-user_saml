@@ -37,7 +37,7 @@ class Admin implements ISettings {
 			];
 		}
 		$serviceProviderFields = [
-            'x509cert' => [
+			'x509cert' => [
 				'text' => $this->l10n->t('X.509 certificate of the Service Provider'),
 				'type' => 'text',
 				'required' => false,
@@ -52,7 +52,7 @@ class Admin implements ISettings {
 				'type' => 'line',
 				'required' => false,
 			]
-        ];
+		];
 		$securityOfferFields = [
 			'nameIdEncrypted' => $this->l10n->t('Indicates that the nameID of the <samlp:logoutRequest> sent by this SP will be encrypted.'),
 			'authnRequestsSigned' => $this->l10n->t('Indicates whether the <samlp:AuthnRequest> messages sent by this SP will be signed. [Metadata of the SP will offer this info]'),
